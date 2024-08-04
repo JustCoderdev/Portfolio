@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Justcoderdev portfolio</title>
+</head>
+
+<!--
+	Kind webdev reading this...
+	please excuse the formatting, but nvim keep's crashing so I'm using vi (vim
+	colorscheme makes me shiver). I've got no auto alignment and having to write
+	by hand all these closing tags is becoming more and more annoying
+-->
+
+<body>
+<header>
+	<nav>
+		<a href="#about">About</a>
+		<a href="#projects">Projects</a>
+		<a href="#blog">Blog</a>
+		<a href="#contacts">Contacts</a>
+	</nav>
+	
+	<span>
+		JustCoderdev portfolio
+	</span>
+</header>
+
+<h1>Welcome to my legacy!</h1>
+
+<p>
+	This website is a collection of what I <b>have done</b>,
+	what I <b>wanted to do</b> and what I <b>never did</b>
+</p>
+
+<p>
+	And don't worry, the CSS IS NOT BROKEN.  (And I've
+	enabled dark mode [you're welcome btw :3])
+</p>
+
+<h2 id="about">About me</h2>
+
+<p>
+	I am JustCode, a nostalic "citizen of the web",
+	stubborn and dedicated to experience the <i>old web</i>
+	in all of its flavors
+</p>
+
+<p>
+	Being a developer who loves <b>old tech</b> and <b>legendary
+	technologies</b> I could not lower myself to writing
+	JavaScript, Python or whatever the fuck is Dart.
+	So I masochistically decided to use C from now
+	(2022?) on, but not just C, no no no...  <b>C89</b> (aka
+	Ansi-C)
+<p>
+
+	<h3>My motives</h3>
+<p>
+	Other than wanting to feel superior to any soydev playing with the latest JS
+	framework, I wanted a language that could let me speak the ascii language of
+	the bit god (i.e. my computer) to understand the black box and become the
+	mechanic of the "under the hood"
+</p>
+
+<p>
+	I switched to linux as soon as I could (<i>I use nixos btw</i>) and started
+	programming in C89 after a period of reflection and self rediscovery of my
+	lost C skill
+</p>
+
+<h2 id="projects">Released projects</h2>
+
+<p>
+	Here is the list of my released projects, things I did for fun or necessity that
+	in the end I felt polished enough to consider slapping the label DONE and close
+	the box <i>for good</i>
+</p>
+
+<ul>
+	<li> <b>TerminalFace</b>
+		(<a href="https://github.com/JustCoderdev/TerminalFace" target="_blank">link</a>)
+		- A clock face available on Garmings app store that looks like a terminal </li>
+
+	<li> <b>Twitch Activity</b>
+		(<a href="https://github.com/JustCoderdev/TwitchActivity" target="_blank">link</a>)
+		- A plugin for Touch Portal to have information about Twitch streamers </li>
+
+	<li> <b>SpectralRainbowForest</b>
+		(<a href="https://github.com/JustCoderdev/SpectralRainbowForest" target="_blank">link</a>)
+		- A minecraft mod that adds a biome with (almost) all the colorful trees from Spectrum </li>
+</ul>
+
+<h2 id="blog">Blog</h2>
+
+<p>
+	Still no blog!
+</p>
+
+<p>
+	<b>But</b> I am writing down all weird quirks, stupid ideas, common errors (and
+	solutions) I encounter while trying to figure out C! (It's going to be a
+	lovely mess)
+</p>
+
+<h2 id="contacts">Contacts</h2>
+
+<p>
+	Fear not, those up ^ there are only the projects I am most confident flexing
+	about, I have got a lot of code on my github:
+</p>
+
+<ul>
+	<li> <a href="https://github.com/JustCoderdev" target="_blank">Github</a> </li>
+</ul>
+
+<footer>
+	DISCLAIMER: All content on this website has been written with a tip of
+	sarcasm and follows the <a href="https://www.iso.org/obp/ui/en/#iso:std:iso:8601:-1:ed-1:v1:en" target="_blank">ISO 8601-1</a>
+	"Date and time" international standard
+</footer>
+
+</body>
+
+<style>
+	:root {
+		/* palette */
+		--fg-primary: hsl(45deg, 25%, 80%);
+
+		--bg-primary:   #252525;
+		--bg-secondary: #3c3c3c;
+
+		--tint-white: #ffffff;
+		--tint-yellow-dim: hsl(45deg,  40%,  40%);
+		--tint-yellow:     hsl(45deg,  80%,  40%);
+		--tint-yellow-br:  hsl(45deg,  80%,  60%);
+	}
+
+	@media screen and (min-width: 480px) {
+		body { font-size: 2em; }
+	}
+
+	html {
+		display: flex;
+		justify-content: center;
+	}
+
+	body {
+		padding: .5em;
+		max-width: 80ch;
+		background-color: var(--bg-primary);
+		color: var(--fg-primary);
+		font-family: monospace;
+	} 
+
+	header, footer {
+		padding: 1em;
+		background-color: var(--bg-secondary);
+	}
+	header {
+		margin: 0em 0em 2em 0em;
+
+		display: flex;
+		justify-content: space-between;
+	}
+	footer {
+		margin: 2em 0em 0em 0em;
+	}
+
+	h1 { text-align: center; }
+	h2 { margin: 2em 0em 1em 0em; }
+	h3 { margin: 2em 1em 1em 1em; }
+
+	p  { margin: 1em; }
+	li { margin: 1em; }
+
+	a, a:link { color: var(--tint-yellow);     } /* Unvisited link  */
+	a:visited { color: var(--tint-yellow-dim); } /* Link in history */
+	a:hover   { color: var(--tint-yellow-br);  } /* Mouse hovering  */
+	a:active  { color: var(--tint-white);      } /* Mouse clicking  */
+</style>
+</html>

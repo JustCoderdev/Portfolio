@@ -68,10 +68,14 @@ code {
 	background-color: var(--bg-secondary);
 	border-radius: 0.1em;
 }
-code.block {
-    display: block;
-    margin: 0em 1em;
-    padding: 0.5em 1em;
+pre {
+	max-width: calc(80ch + 2*1em);
+	
+	margin: 0rem 1rem;
+	padding: 0.5em 1em;
+	
+	background-color: var(--bg-secondary);
+	border-radius: 0.2em;
 }
 sup { vertical-align: top; font-size: 0.6em; }
 em { color: var(--tint-red); }

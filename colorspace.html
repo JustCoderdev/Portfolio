@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>Colorspace</title>
+</head>
+
+<!--
+	NOTE: The HTML has been whitespaced according to
+	the view firefox presents of the webpage at
+	half-width and 140% zoom (52ch)
+-->
+
+<body>
+<header>
+	<nav>
+	   	<a href="index.html">About me</a>
+	</nav>
+
+	<span> Colorspace </span>
+</header>
+
+<h1>Colorspace test</h1>
+
+<p>
+	This is to demonstrate why hsl (after being a good
+	choice for a long time) should now be deprecated in
+	favour of Oklch (and its
+	<a href="https://bottosson.github.io/posts/oklab/" target="_blank">colorspace</a>)
+</p>
+
+	<h2>HSL - Hue Saturation Lightness</h2>
+
+<div style="display: flex; justify-content: space-around;">
+
+	<div class="box" style="background-color: var(--tint-yellow-dim);"> 45 80% 20% </div>
+	<div class="box" style="background-color: var(--tint-yellow);"> 45 80% 40% </div>
+	<div class="box" style="background-color: var(--tint-yellow-br);"> 45 80% 60% </div>
+
+</div>
+
+	<h2>OKLCH - Lightness Chroma Hue</h2>
+
+<div style="display: flex; justify-content: space-around;">
+
+	<div class="box" style="background-color: var(--tint-yellow-dim-o)"> 50% 0.15 90 </div>
+	<div class="box" style="background-color: var(--tint-yellow-o)"> 70% 0.15 90 </div>
+	<div class="box" style="background-color: var(--tint-yellow-br-o)"> 90% 0.15 90 </div>
+</div>
+
+<p>
+	As you can see (I hope) in the HSL version, the darker
+	yellow loses a bit of saturation meanwhile in the
+	OKLCH palette all colors keep the same "yellowness"
+</p>
+
+<p>
+	This test was performed by taking the HSL colors,
+	converting them to OKLCH, and then modifying the
+	lightness value to match <i>as much as possible</i> the
+	original colors while keeping the same step between
+	the darker and lighter version of the base yellow
+</p>
+
+
+<footer>
+	<p>
+		DISCLAIMER: All content on this website has been
+		written with a tip of sarcasm and follows the <a href="https://www.iso.org/obp/ui/en/#iso:std:iso:8601:-1:ed-1:v1:en" target="_blank">ISO 8601-1</a>
+		"Date and time" international standard
+	</p>
+
+	<p>
+		Copyright 2024 JustCode - Made with &lt;3 &amp; HTML
+	</p>
+</footer>
+
+</body>
+
+<style>
+	div.box {
+		width: 20%;
+		aspect-ratio: 1; 
+		padding: 0.5rem;
+
+		color: var(--bg-primary);
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}	
+</style>
+
+</html>

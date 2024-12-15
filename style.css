@@ -9,9 +9,18 @@
 
 	--tint-white: #ffffff;
 	--tint-red: hsl(0deg,  100%,  55%);
-	--tint-yellow-dim: hsl(45deg,  40%,  40%);
+
+	/* --tint-yellow-dim: hsl(45deg,  40%,  40%); /1* oklch(60% 0.1 90) *1/ */
+	/* --tint-yellow:     hsl(45deg,  80%,  40%); /1* oklch(65% 0.1 90) *1/ */
+	/* --tint-yellow-br:  hsl(45deg,  80%,  60%); /1* oklch(80% 0.1 90) *1/ */
+
+	--tint-yellow-dim: hsl(45deg,  80%,  20%);
 	--tint-yellow:     hsl(45deg,  80%,  40%);
 	--tint-yellow-br:  hsl(45deg,  80%,  60%);
+
+	--tint-yellow-dim-o: oklch(50% 0.15 90);
+	--tint-yellow-o:     oklch(70% 0.15 90);
+	--tint-yellow-br-o:  oklch(90% 0.15 90);
 }
 
 html {
